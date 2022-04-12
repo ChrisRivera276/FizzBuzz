@@ -10,8 +10,6 @@ nav {
     color: var(--cr-secondary-color);
 }
 
-
-
 body {
     color: var(--cr-dark-color);
     font-size: 1.2rem;
@@ -60,8 +58,30 @@ main>.container {
     
 }
 
-
 .messagestyle{
     font-size: 1.5rem;
+}
+
+/* JS font */
+.boldItem{
+    font-weight: bold;
+}
+
+.logoPageHeight{
+    height: 5rem;
+}
+
+.fizz{
+    color: red;
+    font-weight: bold;
+}
+
+.buzz{
+    color: blue;
+    font-weight: bold;
+}
+
+.fizzBuzz{
+    color:darkviolet ;
     font-weight: bold;
 }
