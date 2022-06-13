@@ -8,7 +8,6 @@ function getValues() {
     fizzValue = parseInt(fizzValue)
     buzzValue = parseInt(buzzValue)
 
-
     if (Number.isInteger(fizzValue) && Number.isInteger(buzzValue)) {
         // call display values and pass fizz and buss to the function
         let fbValues = fizzBuzzC(fizzValue, buzzValue)
@@ -16,7 +15,6 @@ function getValues() {
 
     } else {
         alert("you must be enter integers!");
-
     }
 }
 // business logic layer - model 1
@@ -36,12 +34,9 @@ function fizzBuzzA(fizz, buzz) {
         } else {
             fbValues.push(i);
         }
-
     }
-
     return fbValues;
 }
-
 
 function fizzBuzzB(fizz, buzz) {
     let fbValues = [];
@@ -76,17 +71,16 @@ function fizzBuzzB(fizz, buzz) {
 }
 
 //ternary function
-function fizzBuzzC(fizz, buzz){
+function fizzBuzzC(fizz, buzz) {
     let fbValues = [];
 
-    for (let i = 1; i <101; i++) {
+    for (let i = 1; i < 101; i++) {
         // value = '' + ''
-        let value = ( (i%fizz == 0 ? 'Fizz' : '') + (i%buzz == 0 ? 'Buzz' : '')  || i );
+        let value = ((i % fizz == 0 ? 'Fizz' : '') + (i % buzz == 0 ? 'Buzz' : '') || i);
         fbValues.push(value);
     }
     return fbValues;
 }
-
 
 // Final Step - view
 function displayValues(fbValues) {
@@ -110,8 +104,6 @@ function displayValues(fbValues) {
         } else if (fbValues[index] == 'FizzBuzz') {
             item.classList.add("fizzBuzz");
         }
-
         element.appendChild(item);
     }
-
 }
